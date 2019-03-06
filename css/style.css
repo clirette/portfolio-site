@@ -21,11 +21,22 @@ header {
   background-color: #2e7775;
   color: #ededed;
   border-bottom: 5px solid #aeab43;
+  top: 0;
 }
 
 header .container {
   display: flex;
-  
+}
+
+.sticky {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .container {
+  padding-top: 60px;
 }
 
 header #branding {
