@@ -1,12 +1,17 @@
-const navbar = document.getElementById('navbar');
-const sticky = navbar.offsetTop;
+const [aboutLink, workLink, contactLink] = [...document.querySelectorAll('.links')];
+const about = document.getElementById('about');
+const work = document.getElementById('work');
+const contact = document.getElementById('contact');
 
-const stickNavbar = () => {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add('sticky');
-  } else {
-    navbar.classList.remove('sticky');
-  }
+const scrollToDiv = (e) => {
+  // console.log(`${e.target.innerText.toLowerCase()}`);
+  const divToScrollTo = document.getElementById(e.target.innerText.toLowerCase());
+  const y = divToScrollTo.offsetTop;
+  console.log(divToScrollTo);
+  window.scrollTo(0, y);
+  // window.scrollTo = document.getElementById(`${e.target.innerText.toLowerCase()}`);
 }
 
-window.onscroll = () => stickNavbar();
+aboutLink.addEventListener('click', scrollToDiv);
+workLink.addEventListener('click', scrollToDiv);
+contactLink.addEventListener('click', scrollToDiv);

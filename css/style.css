@@ -21,22 +21,14 @@ header {
   background-color: #2e7775;
   color: #ededed;
   border-bottom: 5px solid #aeab43;
-  top: 0;
-}
-
-header .container {
-  display: flex;
-}
-
-.sticky {
   position: fixed;
   z-index: 1;
   top: 0;
   width: 100%;
 }
 
-.sticky + .container {
-  padding-top: 60px;
+header .container {
+  display: flex;
 }
 
 header #branding {
@@ -51,6 +43,7 @@ header nav {
 
 header #branding h1 {
   font-weight: 300;
+  margin-left: 1vw;
 }
 
 .highlight {
@@ -99,6 +92,10 @@ header nav ul li:hover {
   width: 50%;
 }
 
+#about .container .content {
+  margin-top: 8vh;
+}
+
 #portrait {
   object-fit: cover;
   width: 250px;
@@ -108,13 +105,13 @@ header nav ul li:hover {
 }
 
 #about .container h1 {
-  /* font-size: 3em; */
+  /* font-size: 3rem; */
   font-size: 40px;
 }
 
 #about .container p {
   margin-top: 6vh;
-  font-size: 22px;
+  font-size: 26px;
   /* font-size: 1.5em; */
   line-height: 1.5;
 }
@@ -153,7 +150,7 @@ header nav ul li:hover {
 
 #work .container p {
   margin-top: 6vh;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 1.5;
 }
 
@@ -189,7 +186,7 @@ header nav ul li:hover {
 
 #contact .container p {
   margin-top: 6vh;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 1.5;
 }
 
