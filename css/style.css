@@ -68,6 +68,11 @@ header nav ul li {
   cursor: pointer;
 }
 
+header nav ul li a {
+  text-decoration: none;
+  color: #ededed;
+}
+
 .current {
   color: #aeab43;
 }
