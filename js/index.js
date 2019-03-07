@@ -5,14 +5,14 @@ const contact = document.getElementById('contact');
 
 const links = [aboutLink, workLink, contactLink];
 
-const scrollToDiv = (e) => {
+const switchCurrentLink = (e) => {
+  e.preventDefault();
   links.forEach(link => link.classList.remove('current'));
   e.target.classList.add('current');
-  const divToScrollTo = document.getElementById(e.target.innerText.toLowerCase());
-  const y = divToScrollTo.offsetTop;
-  window.scrollTo(0, y);
 }
 
-aboutLink.addEventListener('click', scrollToDiv);
-workLink.addEventListener('click', scrollToDiv);
-contactLink.addEventListener('click', scrollToDiv);
+aboutLink.addEventListener('click', switchCurrentLink);
+workLink.addEventListener('click', switchCurrentLink);
+contactLink.addEventListener('click', switchCurrentLink);
+
+const scroll = new SmoothScroll('a[href*="#"]');
