@@ -341,4 +341,47 @@ footer a {
     /* padding-right: 2vw; */
     
   }
+
+  @media (max-width: 320px) {
+    header .container #branding h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      padding-top: 10px;
+    }
+
+    header .container nav ul {
+      margin: 10px 0;
+    }
+
+    header .container nav ul li {
+      font-size: 16px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+
+    #about .container,
+    #work .container,
+    #contact .container {
+      padding-top: 10vh;
+      width: 90%;
+    }
+
+    #about .container #portrait {
+      width: 200px;
+      height: 200px;
+    }
+
+    #about .container .content,
+    #work .container .content,
+    #contact .container .content {
+      margin-top: 0;
+    }
+
+    #about .container .content p,
+    #work .container .content p,
+    #contact .container p {
+      font-size: 22px;
+      margin-top: 22px;
+    }
+  }
 }
