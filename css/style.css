@@ -347,7 +347,7 @@ footer a {
   }
 }
 
-@media (min-width: 320px) and (min-height: 640px) {
+@media (max-width: 320px) and (max-height: 640px) {
   #about .container #portrait {
     width: 175px;
     height: 175px;
@@ -459,7 +459,7 @@ footer a {
   }
 }
 
-@media (max-height: 320px) and (orientation: landscape) {
+@media (max-height: 400px) and (orientation: landscape) {
   header .container {
     display: block;
   }
