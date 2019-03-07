@@ -102,6 +102,7 @@ header nav ul li:hover {
   height: 250px;
   border-radius: 50%;
   border: 5px solid rgb(48, 48, 48);
+  min-width: 100px;
 }
 
 #about .container h1 {
@@ -278,4 +279,61 @@ footer p {
 
 footer a {
   color: inherit;
+}
+
+@media (max-width: 1086px) {
+  header nav ul li {
+    display: block;
+  }
+
+  #branding .highlight {
+    display: block;
+  }
+
+  #about .container {
+    padding-top: 15vh;
+    width: 70%;
+  }
+
+  #about .container .content {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  #branding .highlight {
+    display: block;
+  }
+
+  header .container nav ul {
+    padding-top: 0;
+  }
+
+  #about .container,
+  #work .container,
+  #contact .container {
+    padding-top: 15vh;
+    width: 90%;
+  }
+
+  #about .container .content,
+  #work .container .content,
+  #contact .container .content {
+    margin-top: 0;
+  }
+
+  #about .container .content p,
+  #work .container .content p,
+  #contact .container p {
+    font-size: 22px;
+    margin-top: 22px;
+  }
+
+  #work .container .gallery img {
+    width: auto;
+    height: 100px;
+    padding: 1vw;
+    /* padding-right: 2vw; */
+    
+  }
 }
