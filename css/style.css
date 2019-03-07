@@ -401,8 +401,10 @@ footer a {
     }
 
     #contact .container form input[type=text],
-#contact .container form textarea {
+    #contact .container form textarea {
       margin-bottom: 5px;
+      font-size: 14px;
+      padding: 12px 8px;
     }
 
     footer ul {
