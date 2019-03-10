@@ -307,11 +307,12 @@ footer a {
   }
 
   #work .container .gallery img {
-    height: 75px;
+    padding: 10px;
+    height: 100px;
   }
 
   .gallery {
-    grid-auto-rows: 100px;
+    /* grid-auto-rows: 200px; */
   }
 }
 
@@ -398,6 +399,11 @@ footer a {
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  #work .container .gallery img {
+    padding: 10px;
+    height: 90px;
   }
 
   #contact .container .form-div {
