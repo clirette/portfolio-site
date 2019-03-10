@@ -162,16 +162,18 @@ header nav ul li:hover {
 
 #work .container .gallery img {
   width: auto;
-  height: 150px;
-  padding: 1vw;
+  height: 100px;
+  /* padding: 1vw; */
   /* padding-right: 2vw; */
   
 }
 
-.gallery .row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 125px;
+  justify-items: center;
+  /* text-align: center; */
 }
 
 .column {
