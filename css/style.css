@@ -532,6 +532,7 @@ footer a {
   #work .container,
   #contact .container {
     height: 750px;
+    width: 90%;
   }
 
   #about .container h1,
