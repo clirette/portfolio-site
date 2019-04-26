@@ -253,6 +253,7 @@ header nav ul li:hover {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  -webkit-appearance: none;
 }
 
 #contact .container form input[type=submit]:hover {
